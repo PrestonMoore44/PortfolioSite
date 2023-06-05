@@ -124,9 +124,9 @@ const experiences = [
     iconBg: "black",
     date: "January 2021 - Current",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Led the development of several full stack applications used by hundreds of users worldwide using both the MEAN and MERN stack.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Utilized several AWS services including Lambda, S3 and CloudFront for enhanced scalability, security, and performance.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
