@@ -137,10 +137,10 @@ const experiences = [
     iconBg: "white",
     date: "Jan 2018 - Jan 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developed and maintained scalable RESTAPIs in addition to serving web applications written with NodeJS and React.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed several full stack applications from scratch to increase business efficiency using both the MEAN and MERN stack.",
+      "Developed a CRM system for the sales team to assist in every aspect of customer relations from initial contact to placing first order. ",
     ],
   },
   {
