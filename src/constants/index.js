@@ -150,10 +150,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2017 - Jan 2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created custom landing pages for company internal SharePoint site using JavaScript, HTML, and CSS.",
+      "Coordinated with IT Manager and other managers from various departments to discuss scope of custom pages and associated functionality.",
     ],
   },
 ];
