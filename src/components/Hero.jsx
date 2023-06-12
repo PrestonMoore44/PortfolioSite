@@ -2,8 +2,53 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText.js";
+gsap.registerPlugin(SplitText);
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  // console.log(gasp);
+  // var splitText = new SplitText();
+  const [showIntro, setShowIntro] = useState(false);
+  useEffect(() => {
+    var yourElement = document.getElementById("introduction");
+    var split = new SplitText(yourElement);
+    var tl = gsap.timeline(),
+      mySplitText = new SplitText("#introduction", { type: "words,chars" }),
+      chars = mySplitText.chars; //an array of all the divs that wrap each character
+
+    gsap.set("#introduction", { perspective: 100 });
+    gsap.from(split.words, {
+      duration: 0.3,
+      opacity: 0,
+      x: -25,
+      y: 10,
+      autoAlpha: 0,
+      stagger: 0.1,
+    });
+
+    setTimeout(() => {
+      setShowIntro(true);
+    }, 2000);
+  }, []);
+
+  useEffect(() => {
+    if (!!showIntro) {
+      var secElm = document.getElementById("introBody");
+      var splitTwo = new SplitText(secElm);
+
+      gsap.from(splitTwo.words, {
+        duration: 1,
+        x: 200,
+        opacity: 0,
+        autoAlpha: 0,
+        ease: "power3",
+        stagger: 0.05,
+      });
+    }
+  }, [showIntro]);
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -15,13 +60,19 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 id="introduction" className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Preston</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop custom user interfaces <br className="sm:block hidden" />
-            and full stack web applications at scale.
-          </p>
+          {showIntro && (
+            <div id="introBody">
+              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                I develop custom user interfaces
+              </p>
+              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                and full stack web applications at scale.
+              </p>
+            </div>
+          )}
         </div>
       </div>
 
