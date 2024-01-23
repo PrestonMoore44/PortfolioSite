@@ -5,7 +5,6 @@ import { ComputersCanvas } from "./canvas";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  // var splitText = new SplitText();
   const [showIntro, setShowIntro] = useState(false);
   useEffect(() => {
     setTimeout(() => {
@@ -13,21 +12,7 @@ const Hero = () => {
     }, 2000);
   }, []);
 
-  useEffect(() => {
-    if (!!showIntro) {
-      var secElm = document.getElementById("introBody");
-      var splitTwo = new SplitText(secElm);
-
-      gsap.from(splitTwo.words, {
-        duration: 1,
-        x: 200,
-        opacity: 0,
-        autoAlpha: 0,
-        ease: "power3",
-        stagger: 0.05,
-      });
-    }
-  }, [showIntro]);
+  useEffect(() => {}, [showIntro]);
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -44,7 +29,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Preston</span>
           </h1>
           {showIntro && (
-            <div id="introBody">
+            <div >
               <p className={`${styles.heroSubText} mt-2 text-white-100`}>
                 I develop custom user interfaces
               </p>
