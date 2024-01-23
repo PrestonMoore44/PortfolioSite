@@ -35,6 +35,7 @@ import kidskare from "./kidskare.png";
 import afrolistings from "./afrolistings.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import Lindy from "./company/lindy.png";
 
 export {
   logo,
@@ -71,4 +72,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  Lindy,
 };

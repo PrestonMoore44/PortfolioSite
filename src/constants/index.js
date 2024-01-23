@@ -17,6 +17,7 @@ import {
   docker,
   meta,
   Bitwise,
+  Lindy,
   josephfarms,
   tesla,
   readyroast,
@@ -118,11 +119,23 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Full Stack Software Engineer",
+    company_name: "LindyAi",
+    icon: Lindy,
+    iconBg: "black",
+    date: "July 2021 - Current",
+    points: [
+      "Spearheaded key projects, including the comprehensive development of a credits-based billing system utilizing MongoDB, Stripe API, and ORB API.",
+      "Enhanced user experience with OAuth authentication and integration of services like Google, GitLab, and GitHub.",
+      "Utilized React and TypeScript to develop Project Templates, enabling the creation of new, shareable templates with auto-generated titles and descriptions for the Lindy marketplace's global community.",
+    ],
+  },
+  {
     title: "Lead Software Developer",
     company_name: "Bitwise Industries",
     icon: Bitwise,
     iconBg: "black",
-    date: "January 2021 - Current",
+    date: "January 2021 - May 2023",
     points: [
       "Led the development of several full stack applications used by hundreds of users worldwide using both the MEAN and MERN stack.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
