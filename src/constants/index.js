@@ -123,7 +123,7 @@ const experiences = [
     company_name: "LindyAi",
     icon: Lindy,
     iconBg: "black",
-    date: "July 2021 - Current",
+    date: "July 2023 - Current",
     points: [
       "Spearheaded key projects, including the comprehensive development of a credits-based billing system utilizing MongoDB, Stripe API, and ORB API.",
       "Enhanced user experience with OAuth authentication and integration of services like Google, GitLab, and GitHub.",
