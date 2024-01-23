@@ -145,7 +145,7 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Ready Roast Nut Co",
+    company_name: "Ready Roast Nut Company",
     icon: readyroast,
     iconBg: "#383E56",
     date: "Jan 2017 - Jan 2018",
