@@ -8,7 +8,6 @@ gsap.registerPlugin(SplitText);
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  // console.log(gasp);
   // var splitText = new SplitText();
   const [showIntro, setShowIntro] = useState(false);
   useEffect(() => {
