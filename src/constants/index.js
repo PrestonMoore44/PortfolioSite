@@ -150,7 +150,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2017 - Jan 2018",
     points: [
-      "Created custom landing pages for company internal SharePoint site using JavaScript, HTML, and CSS.",
+      "Created custom landing page for company internal SharePoint site using JavaScript, HTML, and CSS.",
       "Coordinated with IT Manager and other managers from various departments to discuss scope of custom pages and associated functionality.",
     ],
   },
