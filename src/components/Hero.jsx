@@ -2,31 +2,12 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import { gsap } from "gsap";
-import { SplitText } from "gsap/SplitText.js";
-gsap.registerPlugin(SplitText);
 import { useEffect, useState } from "react";
 
 const Hero = () => {
   // var splitText = new SplitText();
   const [showIntro, setShowIntro] = useState(false);
   useEffect(() => {
-    var yourElement = document.getElementById("introduction");
-    var split = new SplitText(yourElement);
-    var tl = gsap.timeline(),
-      mySplitText = new SplitText("#introduction", { type: "words,chars" }),
-      chars = mySplitText.chars; //an array of all the divs that wrap each character
-
-    gsap.set("#introduction", { perspective: 100 });
-    gsap.from(split.words, {
-      duration: 0.3,
-      opacity: 0,
-      x: -25,
-      y: 10,
-      autoAlpha: 0,
-      stagger: 0.1,
-    });
-
     setTimeout(() => {
       setShowIntro(true);
     }, 2000);
@@ -59,7 +40,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 id="introduction" className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Preston</span>
           </h1>
           {showIntro && (
